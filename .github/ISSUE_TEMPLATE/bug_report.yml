@@ -11,7 +11,7 @@ body:
               Please describe your problem here. If you have screenshots, please upload them in the text box below. We promise not to laugh at your weird problem.
               请在这里描述你的问题。如果你有截图，请在下面的文本框中上传。请放心，我们不会嘲笑你的奇葩问题。
     - type: textarea
-      id: question
+      id: desc
       attributes:
           label: Description / 描述
           description: 在此详细描述你遇到的问题。
@@ -20,9 +20,9 @@ body:
       validations:
           required: true
     - type: textarea
-      id: operation
+      id: steps-to-reproduce
       attributes:
-          label: Steps to reproduce / 操作步骤
+          label: Steps to reproduce / 重现步骤
           description: 告诉我们如何操作才能重现你的问题，让我们也能感受到这神奇的变化。
           placeholder: |
               1. 打开 Echo
@@ -32,7 +32,7 @@ body:
       validations:
           required: true
     - type: textarea
-      id: expected_result
+      id: expected-result
       attributes:
           label: Expected result / 期望的结果
           description: 描述你期望看到的结果。

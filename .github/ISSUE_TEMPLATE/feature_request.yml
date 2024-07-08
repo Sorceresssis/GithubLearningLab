@@ -11,12 +11,12 @@ body:
               Please describe your problem here. If you have screenshots, please upload them in the text box below.
               请在这里描述你的想法。如果你有示意图，请在下面的文本框中上传。
     - type: textarea
-      id: description
+      id: desc
       attributes:
           label: Description / 描述
           description: 在此描述你想新增的功能。
           placeholder: 我想让背景图片随手机壳的颜色变化
-          #value:
+          # value:
       validations:
           required: true
     - type: textarea
@@ -24,10 +24,7 @@ body:
       attributes:
           label: Operations / 具体操作
           description: 如果你有更具体的操作流程的想法，请在此描述。
-          placeholder: |
-              1. 打开冰箱门
-              2. 把大象放进去
-              3. 关上冰箱门
-          #value:
+          # placeholder:
+          # value:
       validations:
           required: false
