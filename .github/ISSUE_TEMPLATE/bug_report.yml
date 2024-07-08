@@ -13,7 +13,7 @@ body:
     - type: textarea
       id: question
       attributes:
-          label: Problem Description / 问题描述
+          label: Description / 描述
           description: 在此详细描述你遇到的问题。
           placeholder: 我的媒体库突然开始自己挑选封面，仿佛有了自己的审美。
           # value:
@@ -22,7 +22,7 @@ body:
     - type: textarea
       id: operation
       attributes:
-          label: Reproduction process / 复现流程
+          label: Steps to reproduce / 操作步骤
           description: 告诉我们如何操作才能重现你的问题，让我们也能感受到这神奇的变化。
           placeholder: |
               1. 打开 Echo
@@ -34,7 +34,7 @@ body:
     - type: textarea
       id: expected_result
       attributes:
-          label: Expected result / 预期结果
+          label: Expected result / 期望的结果
           description: 描述你期望看到的结果。
           placeholder: |
               1. 冰箱门打开

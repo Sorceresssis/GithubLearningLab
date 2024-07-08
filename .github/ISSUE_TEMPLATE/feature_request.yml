@@ -13,7 +13,7 @@ body:
     - type: textarea
       id: description
       attributes:
-          label: Describe the enhancement / 功能描述
+          label: Description / 描述
           description: 在此描述你想新增的功能。
           placeholder: 我想让背景图片随手机壳的颜色变化
           #value:
@@ -22,7 +22,7 @@ body:
     - type: textarea
       id: operation
       attributes:
-          label: Specific operations / 具体操作
+          label: Operations / 具体操作
           description: 如果你有更具体的操作流程的想法，请在此描述。
           placeholder: |
               1. 打开冰箱门
