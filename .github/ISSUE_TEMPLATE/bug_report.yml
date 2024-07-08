@@ -1,4 +1,4 @@
-name: Bug report / 我要报告一个问题
+name: Bug report / 报告问题
 description: 它的行为好像和我预料的不太一样。
 labels:
     - bug
@@ -11,18 +11,18 @@ body:
               Please describe your problem here. If you have screenshots, please upload them in the text box below. We promise not to laugh at your weird problem.
               请在这里描述你的问题。如果你有截图，请在下面的文本框中上传。请放心，我们不会嘲笑你的奇葩问题。
     - type: textarea
-      id: question
+      id: desc
       attributes:
-          label: Problem Description / 问题描述
+          label: Description / 描述
           description: 在此详细描述你遇到的问题。
           placeholder: 我的媒体库突然开始自己挑选封面，仿佛有了自己的审美。
           # value:
       validations:
           required: true
     - type: textarea
-      id: operation
+      id: steps-to-reproduce
       attributes:
-          label: Reproduction process / 复现流程
+          label: Steps to reproduce / 重现步骤
           description: 告诉我们如何操作才能重现你的问题，让我们也能感受到这神奇的变化。
           placeholder: |
               1. 打开 Echo
@@ -32,9 +32,9 @@ body:
       validations:
           required: true
     - type: textarea
-      id: expected_result
+      id: expected-result
       attributes:
-          label: Expected result / 预期结果
+          label: Expected result / 期望的结果
           description: 描述你期望看到的结果。
           placeholder: |
               1. 冰箱门打开
