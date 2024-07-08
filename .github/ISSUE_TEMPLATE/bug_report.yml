@@ -1,20 +1,19 @@
-name: 我要报告一个问题
+name: Bug report / 我要报告一个问题
 description: 它的行为好像和我预料的不太一样。
 labels:
     - bug
-    - question
 title: "[Bug] "
 
 body:
     - type: markdown
       attributes:
           value: |
-              请在这里描述你的问题。如果你有截图，请在下面的文本框中上传。请放心，我们不会嘲笑你的奇葩问题。
               Please describe your problem here. If you have screenshots, please upload them in the text box below. We promise not to laugh at your weird problem.
+              请在这里描述你的问题。如果你有截图，请在下面的文本框中上传。请放心，我们不会嘲笑你的奇葩问题。
     - type: textarea
       id: question
       attributes:
-          label: 问题描述 / Problem Description
+          label: Problem Description / 问题描述
           description: 在此详细描述你遇到的问题。
           placeholder: 我的媒体库突然开始自己挑选封面，仿佛有了自己的审美。
           # value:
@@ -23,7 +22,7 @@ body:
     - type: textarea
       id: operation
       attributes:
-          label: 复现流程 / Reproduction process
+          label: Reproduction process / 复现流程
           description: 告诉我们如何操作才能重现你的问题，让我们也能感受到这神奇的变化。
           placeholder: |
               1. 打开 Echo
@@ -31,11 +30,11 @@ body:
               3. 选择图片
           # value:
       validations:
-          required: false
+          required: true
     - type: textarea
       id: expected_result
       attributes:
-          label: 预期结果 / Expected result
+          label: Expected result / 预期结果
           description: 描述你期望看到的结果。
           placeholder: |
               1. 冰箱门打开
@@ -47,7 +46,7 @@ body:
     - type: textarea
       id: additional_context
       attributes:
-          label: 其他信息 / Additional context
+          label: Additional context / 其他信息
           description: 如果你有任何其他信息，请在这里告诉我们。
           placeholder: |
               System: Windows 11
