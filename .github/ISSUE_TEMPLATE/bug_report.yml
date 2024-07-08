@@ -1,4 +1,4 @@
-name: Bug report / 我要报告一个问题
+name: Bug report / 报告问题
 description: 它的行为好像和我预料的不太一样。
 labels:
     - bug
