@@ -44,12 +44,5 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: ${{ matrix.os }}
-        path: dist # 替换为你的打包输出目录
+        path: release # 替换为你的打包输出目录
 
-    - name: release
-      uses: softprops/action-gh-release@v0.1.14
-      if: startsWith(github.ref, 'refs/tags/')
-      with:
-        files: "dist/**"
-      env:
-        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
