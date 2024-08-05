@@ -8,7 +8,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [windows-latest, macos-latest, ubuntu-latest]
+        os: [windows-latest, macos-latest]
 
     steps:
     - name: Checkout code
@@ -37,12 +37,6 @@ jobs:
     - name: Release for Mac
       if: matrix.os == 'macos-latest'
       run: npm run release:mac
-      env:
-        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-
-    - name: Release for Linux
-      if: matrix.os == 'ubuntu-latest'
-      run: npm run release:linux
       env:
         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
