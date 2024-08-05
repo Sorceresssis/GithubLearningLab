@@ -1,0 +1,47 @@
+name: Build Electron App
+
+on:
+  workflow_dispatch: # 手动触发工作流的配置
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4 # 使用 v4 版本
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4 # 使用 v4 版本
+      with:
+        node-version: '20' # 指定 Node.js 版本
+
+    - name: Install dependencies
+      run: npm install
+    
+    - name: Rebuild
+      run: npm run rebuild
+
+    - name: Build- Render
+      run: npm run build:render
+
+    - name: Build- Main
+      run: npm run build:main
+
+    - name: Release Win
+      run: npm run release:win
+
+    - name: Release Mac
+      run: npm run release:mac
+
+    - name: Release Linux
+      run: npm run release:linux
+
+    - name: Upload Release Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: electron-app
+        path: path/to/your/app # 替换为你的打包输出目录
