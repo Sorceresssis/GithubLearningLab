@@ -30,7 +30,7 @@ jobs:
       run: |
         cd ./src
         pwd
-        python -m PyInstaller --onefile --name=TiebaScraper .\cli_entry.py
+        python -m PyInstaller --onefile --name=TiebaScraper ./cli_entry.py
 
     - name: Upload Release Artifacts
       uses: actions/upload-artifact@v4
