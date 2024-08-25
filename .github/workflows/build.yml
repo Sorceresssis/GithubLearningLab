@@ -27,6 +27,7 @@ jobs:
 
     - name: Build executable
       run: |
+        cd ./src
         python -m PyInstaller --onefile --name=TiebaScraper .\cli_entry.py
 
     - name: Upload Release Artifacts
