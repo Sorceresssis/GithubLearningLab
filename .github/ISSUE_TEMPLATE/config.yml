@@ -1,4 +1,5 @@
 blank_issues_enabled: true
 contact_links:
     - name: 提问和交流
-      about: 我想来唠唠嗑。（我们比较忙，不一定会及时回复）
+      # url:
+      about: 我想来唠唠嗑。
